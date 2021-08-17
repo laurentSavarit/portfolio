@@ -2,7 +2,7 @@
   <header class="masthead bg-primary text-white text-center">
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image-->
-                <img class="masthead-avatar mb-5" src="/img/avatar.png" alt="avatar de laurent savarit" />
+                <img class="masthead-avatar mb-5" src="~/assets/img/avatar.png" alt="avatar de laurent savarit" />
 
                 <!-- Masthead Heading-->
                 <h1 class="masthead-heading text-uppercase mb-0">Laurent Savarit</h1>
