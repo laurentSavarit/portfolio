@@ -15,7 +15,17 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {href:"https://fonts.googleapis.com/css?family=Montserrat:400,700", rel:"stylesheet", type:"text/css" },
+      {href: "https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic", rel: "stylesheet", type:"text/css"},
+      {href: "/css/reset.css", rel: "stylesheet"},
+      {href: "/css/styles.css", rel: "stylesheet"}
+    ],
+    script: [
+      {src:"https://use.fontawesome.com/releases/v5.15.3/js/all.js", crossorigin: "anonymous", defer:true},
+      {src: "https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js", defer:true},
+      {src: "/js/scripts.js", defer: true},
+      {src: "https://cdn.startbootstrap.com/sb-forms-latest.js", defer: true}
     ]
   },
 
