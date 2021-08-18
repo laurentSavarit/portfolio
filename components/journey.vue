@@ -8,13 +8,14 @@
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-icon"><i class="fas fa-chevron-down"></i></div>
                     <div class="divider-custom-line"></div>
+
                 </div>
+
                 <!-- About Section Content-->
                 <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p></div>
+                    <img class="tree" src="~/assets/img/tree.png" alt="mon parcours de compétences">
                 </div>
 
             </div>
@@ -27,3 +28,8 @@ export default {
 }
 </script>
 
+<style scoped>
+  .tree{
+    filter: drop-shadow(2px 2px 1px black)
+  }
+</style>

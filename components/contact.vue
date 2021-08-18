@@ -7,7 +7,7 @@
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-icon"><i class="fas fa-chevron-down"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
                 <div class="row justify-content-center">
@@ -44,9 +44,13 @@
                     </div>
                 </div>
             </div>
+            <Modal/>
  </section>
 </template>
 <script>
+
+import Modal from "./modal.vue";
+
 export default {
   name:"Contact",
   data(){
@@ -88,7 +92,7 @@ export default {
       }
     },
     onSubmitFormContact(event){
-      //TODO traiter l'envoi du mail au serveur
+
       if(this.valid){
 
         this.$mail.send({

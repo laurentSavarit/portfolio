@@ -7,7 +7,7 @@
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-icon"><i class="fas fa-chevron-down"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Portfolio Grid Items-->
@@ -20,7 +20,7 @@
                                 </div>
                                 <figure class="figure-portfolio">
                                   <img :src="getLanguageLogo(repo.language)" alt="logo github">
-                                  <figcaption>{{repo.name}}</figcaption>
+                                  <figcaption><h4>{{repo.name}}</h4></figcaption>
                                   </figure>
                         </div>
                     </div>
@@ -46,7 +46,7 @@ export default {
 
   async mounted() {
 
-    const request = await fetch("https://api.github.com/user/repos?type=public",{
+    const request = await fetch("https://api.github.com/user/repos?type=owner",{
       headers:{
         "Accept":"application/vnd.github.v3+json",
         "Authorization":`token ${token}`
@@ -64,11 +64,12 @@ export default {
   methods:{
     getLanguageLogo(language){
 
+      console.log(language);
       if(!language){
         return require("~/assets/img/github.png");
       };
 
-      return require('~/assets/img/'+language.toLowerCase()+".jpg");
+      return require('~/assets/img/'+language.toLowerCase()+".png");
     }
   }
 
