@@ -17,7 +17,11 @@
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
+                                </div>
+                                <figure class="figure-portfolio">
+                                  <img :src="getLanguageLogo(repo.language)" alt="logo github">
+                                  <figcaption>{{repo.name}}</figcaption>
+                                  </figure>
                         </div>
                     </div>
                 </div>
@@ -57,5 +61,37 @@ export default {
 
   },
 
+  methods:{
+    getLanguageLogo(language){
+
+      if(!language){
+        return require("~/assets/img/github.png");
+      };
+
+      return require('~/assets/img/'+language.toLowerCase()+".jpg");
+    }
+  }
+
 }
 </script>
+
+<style scoped>
+  .figure-portfolio{
+    width: 100%;
+  }
+
+  .figure-portfolio img{
+    display:block;
+    width: 200px;
+    margin:auto;
+  }
+
+  .figure-portfolio figcaption{
+    text-align:center;
+    font-size: 2em;
+    margin:1em;
+    font-weight:700;
+    color: #2C3E50;
+  }
+
+</style>
