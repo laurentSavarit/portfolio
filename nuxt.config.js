@@ -21,8 +21,7 @@ export default {
     ],
     script: [
       {src:"https://use.fontawesome.com/releases/v5.15.3/js/all.js", crossorigin: "anonymous", defer:true},
-      {src: "https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js", defer:true},
-      {src: "https://cdn.startbootstrap.com/sb-forms-latest.js", defer: true}
+      {src: "https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js", defer:true}
     ]
   },
 
