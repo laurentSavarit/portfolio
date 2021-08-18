@@ -1,3 +1,6 @@
+import dotenv from "dotenv";
+dotenv.config();
+
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
@@ -44,7 +47,20 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-
+    "@nuxtjs/axios",
+    ["nuxt-mail",{
+      message:{
+        to:"laurent.savarit@gmail.com",
+      },
+      smtp:{
+        host:"in-v3.mailjet.com",
+        port:587,
+        auth:{
+          user: process.env.USER_MAIL,
+          pass: process.env.PASS_MAIL
+        }
+      }
+    }]
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

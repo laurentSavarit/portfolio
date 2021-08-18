@@ -12,7 +12,7 @@
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-lg-8 col-xl-7">
-                        <form id="contactForm" @submit="onSubmitFormContact">
+                        <form id="contactForm" @submit.prevent="onSubmitFormContact">
                             <!-- Name input-->
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="name" name="name" v-model="name" @input="onChange" type="text" placeholder="Entrer votre nom et prénom"/>
@@ -88,10 +88,17 @@ export default {
       }
     },
     onSubmitFormContact(event){
-      event.preventDefault();
       //TODO traiter l'envoi du mail au serveur
       if(this.valid){
-      console.log(this.$data)
+
+        this.$mail.send({
+          from: "laurent.savarit@gmail.com",
+          subject: `Tu as reçu un mail de ${this.$data.name} - tel: ${this.$data.phone}`,
+          text: `
+                expediteur: ${this.$data.email}<br/>
+                message:<br/>${this.$data.message}`
+        })
+
       event.target.reset();
       }else{
         console.log("form invalide....")
