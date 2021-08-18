@@ -33,6 +33,9 @@
 </template>
 
 <script>
+
+import token from "../token";
+
 export default {
   name:"Portfolio",
 
@@ -48,7 +51,7 @@ export default {
     const request = await fetch("https://api.github.com/user/repos?type=public",{
       headers:{
         "Accept":"application/vnd.github.v3+json",
-        "Authorization":"token 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"
+        "Authorization":`token ${token}`
 
       }
     })
