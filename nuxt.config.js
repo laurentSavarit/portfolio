@@ -73,6 +73,10 @@ export default {
     icon: false
   },
 
+  env:{
+    token: process.env.TOKEN_GITHUB
+  },
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   }

@@ -67,7 +67,6 @@
 
 <script>
 
-import token from "../token";
 import DetailRepo from "./detailRepo.vue";
 
 export default {
@@ -90,7 +89,7 @@ export default {
         {
           headers: {
             Accept: "application/vnd.github.v3+json",
-            Authorization: `token ${token}`,
+            Authorization: `token ${process.env.token}`,
           },
         }
       );
