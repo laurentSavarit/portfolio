@@ -139,7 +139,7 @@ export default {
     async onSubmitFormContact(event) {
       try {
         if (this.valid) {
-          const send = await this.$mail.send({
+          const send = await this.$axios.$post("/mail/send",{
             from: "laurent.savarit@gmail.com",
             subject: `Tu as reçu un mail de ${this.$data.name} - tel: ${this.$data.phone}`,
             text: `
