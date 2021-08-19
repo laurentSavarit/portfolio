@@ -8,7 +8,6 @@
         <Journey/>
         <Contact/>
         <Footer/>
-        <Modal/>
     </div>
 
 </template>
@@ -18,7 +17,6 @@ import Contact from '../components/contact.vue';
 import Footer from '../components/footer.vue';
 import Header from '../components/header.vue';
 import Journey from "../components/journey.vue";
-import Modal from '../components/modal.vue';
 import Nav from '../components/nav.vue';
 import Portfolio from '../components/portfolio.vue';
 
@@ -30,8 +28,7 @@ export default {
     Nav,
     Header,
     Contact,
-    Footer,
-    Modal
+    Footer
   }
 }
 

@@ -14,7 +14,7 @@
                 <div class="row justify-content-center">
                     <!-- Portfolio Item 1-->
                     <div class="col-md-6 col-lg-4 mb-5" v-for="repo in repos" :key="repo.id">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" :data-bs-target="'#repo-'+repo.id">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
@@ -23,19 +23,26 @@
                                   <figcaption><h4>{{repo.name}}</h4></figcaption>
                                   </figure>
                         </div>
+                      <DetailRepo :id-repo="'repo-'+repo.id" :repo="repo"/>
                     </div>
                 </div>
             </div>
+
         </section>
 </template>
 
 <script>
 
 import token from "../token";
+import DetailRepo from "./detailRepo.vue";
 
 export default {
 
   name:"Portfolio",
+
+  components:{
+    DetailRepo
+  },
 
   data(){
     return{
@@ -46,7 +53,7 @@ export default {
 
   async mounted() {
 
-    const request = await fetch("https://api.github.com/user/repos?type=owner",{
+    const request = await fetch("https://api.github.com/user/repos?type=owner&sort=created&direction=desc&per_page=100",{
       headers:{
         "Accept":"application/vnd.github.v3+json",
         "Authorization":`token ${token}`

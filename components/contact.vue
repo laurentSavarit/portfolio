@@ -44,15 +44,14 @@
                     </div>
                 </div>
             </div>
-            <Modal/>
  </section>
 </template>
 <script>
 
-import Modal from "./modal.vue";
-
 export default {
   name:"Contact",
+
+
   data(){
     return{
       name:"",
