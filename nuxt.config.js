@@ -1,6 +1,3 @@
-import dotenv from "dotenv";
-dotenv.config();
-
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
@@ -74,7 +71,7 @@ export default {
   },
 
   env:{
-    token: process.env.TOKEN_GITHUB
+    token: process.env.TOKEN_GITHUB,
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
