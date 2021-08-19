@@ -1,5 +1,5 @@
 <template>
-  <header class="masthead bg-primary text-white text-center">
+  <header class="masthead bg-secondary text-white text-center">
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image-->
                 <img class="masthead-avatar mb-5 avatar-perso" src="~/assets/img/avatar.jpg" alt="avatar de laurent savarit" />
@@ -14,7 +14,7 @@
                 </div>
                 <!-- Masthead Subheading-->
                 <p class="masthead-subheading font-weight-light mb-0">Développeur Web fullstack javaScript</p>
-                <a class="btn btn-secondary btn-xl my-4" href="/docs/cv.pdf" target="_blank"><i class="fas fa-download"></i> Télécharger mon CV</a>
+                <a class="btn btn-success btn-xl my-4" href="/docs/cv.pdf" target="_blank" title="télécharge mon CV"><i class="fas fa-download"></i> Télécharger mon CV</a>
             </div>
         </header>
 </template>

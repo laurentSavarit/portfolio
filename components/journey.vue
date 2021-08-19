@@ -1,6 +1,6 @@
 <template>
    <!-- About Section-->
-        <section class="page-section bg-primary text-white mb-0" id="about">
+        <section class="page-section bg-primary text-white mb-0 my-4" id="about">
             <div class="container">
 
                 <!-- About Section Heading-->

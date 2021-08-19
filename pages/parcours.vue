@@ -3,7 +3,7 @@
    <div id="page-top">
 
         <Nav/>
-        <Header/>
+        <Journey/>
         <Footer/>
     </div>
 
@@ -12,18 +12,29 @@
 <script>
 
 import Footer from '../components/footer.vue';
-import Header from '../components/header.vue';
+import Journey from '../components/journey.vue';
 import Nav from '../components/nav.vue';
 
+
 export default {
-  name: "app",
+  name: "parcours",
   components:{
     Nav,
-    Header,
-    Footer
+    Footer,
+    Journey,
+  },
+
+  data(){
+    return{
+      title:"parcours"
+    }
+  },
+
+  head(){
+    return{
+      title: document.title +"-"+ this.title
+    }
   }
 }
 
 </script>
-
-

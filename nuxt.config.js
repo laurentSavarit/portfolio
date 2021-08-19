@@ -7,7 +7,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'mon-portfolio',
+    title: 'Portfolio Laurent Savarit',
     htmlAttrs: {
       lang: 'fr'
     },
@@ -43,6 +43,7 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    '@nuxtjs/pwa'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -60,8 +61,17 @@ export default {
           pass: process.env.PASS_MAIL
         }
       }
-    }]
+    }],
+    "@nuxtjs/sitemap",
   ],
+
+  sitemap: {
+    hostname:"https://www.laurentsavarit.com"
+  },
+
+  pwa:{
+    icon: false
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
