@@ -66,7 +66,7 @@ export default {
   ],
 
   sitemap: {
-    hostname:"https://www.laurentsavarit.com"
+    hostname:"https://portfolio-laurent-savarit.herokuapp.com"
   },
 
   pwa:{
@@ -75,6 +75,10 @@ export default {
 
   env:{
     token: process.env.TOKEN_GITHUB,
+  },
+
+  axios:{
+    baseURL: process.env.BASE_URL || "http://localhost:3000"
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
