@@ -24,7 +24,7 @@
             :icon="brand.faBootstrap"
           />
         </div>
-        
+
       </div>
       <!-- Masthead Subheading-->
       <p class="masthead-subheading font-weight-light mb-0">
@@ -45,7 +45,6 @@
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import * as brand from "@fortawesome/free-brands-svg-icons";
 
-console.log("fas", fas);
 
 export default {
   name: "Header",

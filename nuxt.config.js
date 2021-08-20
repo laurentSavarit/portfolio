@@ -71,7 +71,7 @@ export default {
   },
 
   pwa:{
-    icon: false
+    icon: true
   },
 
   env:{
