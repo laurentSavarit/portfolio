@@ -1,5 +1,5 @@
 <template>
-  <section class="page-section" id="contact">
+  <section class="page-section mt-5" id="contact">
     <div class="container">
       <!-- Contact Section Heading-->
       <h2
@@ -7,7 +7,7 @@
           page-section-heading
           text-center text-uppercase text-secondary
           mb-0
-          my-4
+          mt-4
         "
       >
         Me contacter
@@ -79,7 +79,7 @@
 
             <!-- Submit Button-->
             <button
-              class="btn btn-primary btn-xl"
+              class="btn btn-success btn-xl"
               id="submitButton"
               type="submit"
             >

@@ -14,11 +14,11 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <ul class="list-group">
-                  <li class="list-group-item"><a href="/">Accueil</a></li>
-                  <li class="list-group-item"><a href="/portfolio">Portfolio</a></li>
-                  <li class="list-group-item"><a href="/parcours">Parcours</a></li>
-                  <li class="list-group-item"><a href="/contact">Contact</a></li>
-                  <li class="list-group-item"><a href="/plan">Plan du site</a></li>
+                  <li class="list-group-item"><NuxtLink class="link-success" to="/">Accueil</NuxtLink></li>
+                  <li class="list-group-item"><NuxtLink class="link-success" to="/portfolio">Portfolio</NuxtLink></li>
+                  <li class="list-group-item"><NuxtLink class="link-success" to="/parcours">Parcours</NuxtLink></li>
+                  <li class="list-group-item"><NuxtLink class="link-success" to="/contact">Contact</NuxtLink></li>
+                  <li class="list-group-item"><NuxtLink class="link-success" to="/plan">Plan du site</NuxtLink></li>
                 </ul>
 
             </div>

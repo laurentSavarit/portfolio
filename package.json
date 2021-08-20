@@ -2,7 +2,9 @@
   "name": "mon-portfolio",
   "version": "1.0.0",
   "private": true,
-  "engines":{"node":"16.x"},
+  "engines": {
+    "node": "16.x"
+  },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
@@ -19,6 +21,9 @@
     "nuxt-mail": "^3.0.11"
   },
   "devDependencies": {
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@nuxtjs/fontawesome": "^1.1.2",
     "@nuxtjs/pwa": "^3.3.5",
     "@vue/test-utils": "^1.2.1",
     "babel-core": "7.0.0-bridge.0",

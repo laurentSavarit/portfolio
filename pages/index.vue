@@ -15,6 +15,7 @@ import Footer from '../components/footer.vue';
 import Header from '../components/header.vue';
 import Nav from '../components/nav.vue';
 
+
 export default {
   name: "app",
   components:{

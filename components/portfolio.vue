@@ -1,6 +1,6 @@
 <template>
   <!-- Portfolio Section-->
-  <section class="page-section portfolio" id="portfolio">
+  <section class="page-section portfolio mt-5" id="portfolio">
     <div class="container">
       <!-- Portfolio Section Heading-->
       <h2
@@ -8,7 +8,7 @@
           page-section-heading
           text-center text-uppercase text-secondary
           mb-0
-          my-4
+          mt-4
         "
       >
         Mon Portfolio

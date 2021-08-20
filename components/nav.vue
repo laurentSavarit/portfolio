@@ -5,7 +5,22 @@
       id="mainNav"
     >
       <div class="container">
-        <NuxtLink class="navbar-brand" to="/" title="Retour à l'accueil">Laurent Savarit</NuxtLink>
+        <NuxtLink class="navbar-brand" to="/" title="Retour à l'accueil">
+          Laurent Savarit
+          <div class="divider-custom divider-light my-0">
+          <div class="divider-custom-icon">
+          <font-awesome-icon aria-label="logo javascript" :icon="brand.faJs" />
+          <font-awesome-icon aria-label="logo vue js" :icon="brand.faVuejs" />
+          <font-awesome-icon aria-label="logo react" :icon="brand.faReact" />
+          <font-awesome-icon aria-label="logo node js" :icon="brand.faNodeJs" />
+          <font-awesome-icon aria-label="logo git" :icon="brand.faGitSquare" />
+          <font-awesome-icon
+            aria-label="logo bootstrap"
+            :icon="brand.faBootstrap"
+          />
+        </div>
+          </div>
+        </NuxtLink>
         <button
           class="
             navbar-toggler
@@ -50,7 +65,21 @@
 </template>
 
 <script>
+
+import { fas } from "@fortawesome/free-solid-svg-icons";
+import * as brand from "@fortawesome/free-brands-svg-icons";
+
 export default {
   name: "Nav",
+
+  computed: {
+    fas() {
+      return fas;
+    },
+
+    brand() {
+      return brand;
+    },
+  },
 };
 </script>
