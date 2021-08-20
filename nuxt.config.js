@@ -79,7 +79,7 @@ export default {
   },
 
   axios:{
-    baseURL: process.env.BASE_URL || "http://localhost:3000"
+    baseURL: process.env.BASE_URL || "http://www.laurentsavarit.com"
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
