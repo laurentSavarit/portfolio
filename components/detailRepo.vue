@@ -43,7 +43,7 @@
                   {{ repo.description || "absence de description" }}
                 </p>
                 <button
-                  class="btn btn-primary"
+                  class="btn btn-primary mt-2"
                   :data-clone="repo.clone_url"
                   title="copie le lien du dépôt dans le presse papier pour le cloner"
                   @click="copyRepo"
@@ -52,7 +52,7 @@
                   cloner le dépôt
                 </button>
                 <a
-                  class="btn btn-primary"
+                  class="btn btn-primary mt-2"
                   :href="repo.html_url"
                   target="_blank"
                   rel="noreferrer"
@@ -60,7 +60,7 @@
                   ><i class="fas fa-link fa-fw"></i>Accéder au repo sur
                   GitHub</a
                 >
-                <button class="btn btn-primary" data-bs-dismiss="modal" title="fermer la fenêtre modale">
+                <button class="btn btn-primary mt-2" data-bs-dismiss="modal" title="fermer la fenêtre modale">
                   <i class="fas fa-times fa-fw"></i>Fermer
                 </button>
               </div>
