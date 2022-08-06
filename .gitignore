@@ -91,3 +91,5 @@ sw.*
 
 # github token
 token.js
+
+package-lock.json

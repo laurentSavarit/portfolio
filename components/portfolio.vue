@@ -52,7 +52,7 @@
               </div>
             </div>
             <figure class="figure-portfolio">
-              <img :src="getLanguageLogo(repo.language)" alt="logo github" />
+              <img :src="getLanguageLogo(repo.language)" :alt="'logo ' + repo.language" />
               <figcaption>
                 <h4>{{ repo.name }}</h4>
               </figcaption>
@@ -103,11 +103,15 @@ export default {
 
   methods: {
     getLanguageLogo(language) {
+      try{
       if (!language) {
         return require("~/assets/img/github.png");
       }
 
       return require("~/assets/img/" + language.toLowerCase() + ".png");
+      }catch(e){
+        return require("~/assets/img/github.png");
+      }
     },
   },
 };
